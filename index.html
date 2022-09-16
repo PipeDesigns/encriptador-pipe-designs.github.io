@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="imagenes/LOGO ACTUALIZADO PD 3-04.png" alt="Logo Pipe Desigsn">
+    </header>
+    <main>
+        <div class="principal">
+            <section class= "ingresar">
+                <textarea class="input-text" placeholder="Ingrese su texto" cols="30" rows="10" ></textarea>
+                <div class="botones">
+                    <button class="encriptar" onclick="encriptarBtn()">Encriptar</button>
+                    <button class="desencriptar" onclick="desencriptarBtn()">Desencriptar</button>
+                </div>
+            </section>
+            <section class="final">
+                <textarea id="mensaje" class="mensaje" cols="30" rows="10" readonly></textarea>
+                <div class="botonCopiar">
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                      
+                </div>
+            </section>
+    
+           
+        </div>
+
+        <div class="footer">
+            <ul class="redes">
+                <li>
+                    <a href="https://www.instagram.com/pipedesigns_0/" class="link"><img class="instagram" src="imagenes/redes-03.png" alt="imagen Instagram"><p>Instagram</p></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/felipe-cuadros-0a2859244/" class="link"><img class="linkedin" src="imagenes/redes-04.png" alt="imagen Instagram"><p>LinkedIn</p></a>
+                </li>
+            </ul>
+        </div> 
+        <section id="mensajeCopiar">
+            <div class="copiado">
+                <img class="imagenCopiado" src="imagenes/ROBOT COPIAR 2-02.png" alt="robot Pipe Desigsn">
+                Tu texto ha sido copiado con exito
+            </div>
+        </section>  
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
